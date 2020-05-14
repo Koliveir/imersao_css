@@ -63,6 +63,7 @@ a:hover {
     border: 5px indianred solid;
     width: 500px;
     height: 100px;
+    padding: 10px;
 }
 
 .site-subtitle {
