@@ -1,14 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url("/images/fundo-site.jpg");
+    background-image: url("../images/fundo-site.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
     background-color: whitesmoke;
     border: 5px tomato solid;
-    margin: 0;
     font-size: 20px;
+    position: fixed;
+    top: 0;
+    width: 100vh;
 }
 
 .menu ul {
@@ -20,10 +36,12 @@ body {
     list-style: none;
 }
 
-a {
+.menu a {
     text-decoration: none;
     color: teal;
-    font-size: 20px;
+    /*font-size: 20px bold;*/
+    display: block;
+    padding: 10px 20px;
 }
 
 a:hover {
@@ -34,19 +52,23 @@ a:hover {
 
 .site-title {
     text-align: center;
+    justify-content: center;
     color: whitesmoke;
     background-color: slategray;
     font-size: 40px;
     border: 5px tomato solid;
-    padding: 10px;
-    margin: auto;
-    margin-top: 300px;
-    width: 300px;
-    height: 50px;
+    width: 500px;
+    height: 100px;
 }
 
 .site-subtitle {
     font-style: italic;
     text-align: center;
     color: whitesmoke;
+    margin-top: 10px;
+}
+
+.img-portfolio {
+    height: 180px;
+    width: 180px;
 }
