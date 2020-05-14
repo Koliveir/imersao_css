@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("../images/fundo-site.jpg");
+    background-image: url("../images/pexels-photo-196645.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -20,16 +20,19 @@ header {
 
 .menu {
     background-color: whitesmoke;
-    border: 5px tomato solid;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: bold;
     position: fixed;
     top: 0;
-    width: 100vh;
+    width: 100%;
 }
 
 .menu ul {
     display: flex;
     justify-content: space-around;
+    border-color: indianred;
+    border-width: 0px 0px 5px 0px;
+    border-style: solid;
 }
 
 .menu li {
@@ -37,8 +40,9 @@ header {
 }
 
 .menu a {
+    font-style: oblique;
     text-decoration: none;
-    color: teal;
+    color: slategray;
     /*font-size: 20px bold;*/
     display: block;
     padding: 10px 20px;
@@ -46,25 +50,27 @@ header {
 
 a:hover {
     text-decoration: line-through;
-    color: tomato;
+    color: indianred; 
 }
 
 
 .site-title {
+    font-style: oblique;
     text-align: center;
-    justify-content: center;
-    color: whitesmoke;
-    background-color: slategray;
-    font-size: 40px;
-    border: 5px tomato solid;
+    color: slategray;
+    background-color: whitesmoke;
+    font-size: 60px;
+    border: 5px indianred solid;
     width: 500px;
     height: 100px;
 }
 
 .site-subtitle {
-    font-style: italic;
+    font-style: oblique;
     text-align: center;
-    color: whitesmoke;
+    text-decoration: underline slategray;
+    font-size: 180%;
+    color: indianred;
     margin-top: 10px;
 }
 
