@@ -12,7 +12,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-
 header {
     height: 100vh;
     display: flex;
@@ -22,19 +21,12 @@ header {
 
 .menu {
     background-color: whitesmoke;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 25px; 
+    font-family: 'Ubuntu', sans-serif;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
 }
-
-@media (min-width: 400px) {
-    .menu {
-        font-size: 20px;
-    }
-}
-    
 
 .menu ul {
     display: flex;
@@ -44,54 +36,33 @@ header {
     border-style: solid;
 }
 
-@media (min-width: 400px) {
-    .menu ul {
-        border-width: 0 0 3px 0;
-    }
-}
-
 .menu li {
     list-style: none;
 }
 
 .menu a {
-    font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
     color: slategray;
+    font-weight: bolder;
     display: block;
     padding: 10px 20px;
 }
 
-a:hover {
-    text-decoration: line-through;
-    color: indianred; 
+.menu a:hover {
+    text-decoration: line-through indianred;
 }
 
-
 .site-title {
-    /*font-style: oblique;*/
     text-align: center;
-    font-family: 'Ubuntu', sans-serif;
     color: slategray;
     background-color: whitesmoke;
-    font-size: 60px;
+    font-size: 70px ;
     border: 5px indianred solid;
     width: 500px;
-    height: 100px;
+    height: 100%;
     padding: 10px;
 }
 
-@media (min-width: 400px){  
-    .site-title {
-        font-size: 3em;
-        padding: 0;
-        width: 350px;
-        height: 100%;
-        border: 3px indianred solid;
-    }
-    
-}
-    
 .site-subtitle {
     font-style: oblique;
     font-family: 'Ubuntu', sans-serif;
@@ -102,19 +73,37 @@ a:hover {
     margin-top: 10px;
 }
 
-@media (min-width: 400px) {
+/* breakpoint */
+
+@media (max-width: 375px) {
+    .menu {
+        font-size: 20px;
+    }
+    
+    .menu ul {
+        border-width: 0px 0px 3px 0px;        
+    }
+    .site-title {
+        font-size: ;
+        width: 280px;
+        height: 180px;
+        padding: 5px;
+        border: 3px indianred solid;
+    }
     .site-subtitle {
-        font-size: 120%;
+        font-size: 25px;
     }
 }
 
+.contato,
 .portfolio {
     font-family: 'Ubuntu', sans-serif;
     color: indianred;
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
 }
 
+.contato,
 .portfolio h2 {
     font-family: 'Roboto', sans-serif;
     color: slategray;
@@ -160,4 +149,18 @@ a:hover {
         width: 100%;
     }
 
+}
+
+.contato .icons {
+    text-align: center;
+}
+
+.contato a {
+    color: indianred;
+    font-size: 5em;
+}
+
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px grey;
 }
