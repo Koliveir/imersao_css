@@ -75,7 +75,7 @@ header {
 
 /* breakpoint */
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
     .menu {
         font-size: 20px;
     }
