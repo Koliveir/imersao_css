@@ -46,10 +46,12 @@ header {
     font-weight: bolder;
     display: block;
     padding: 10px 20px;
+    transition: background-color, color 1s;
 }
 
 .menu a:hover {
-    text-decoration: line-through indianred;
+    background-color: indianred;
+    color: whitesmoke;
 }
 
 .site-title {
