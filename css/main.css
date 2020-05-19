@@ -95,12 +95,16 @@ header {
     }
 }
 
-.contato,
+/********************************************
+                PORTFOLIO
+********************************************/
+
+/*.contato,*/
 .portfolio {
     font-family: 'Ubuntu', sans-serif;
     color: indianred;
     padding: 2em;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 .contato,
@@ -108,15 +112,43 @@ header {
     font-family: 'Roboto', sans-serif;
     color: slategray;
     margin-bottom: 5px;
-    font-size: 2em;
+    font-size: 50px;
 }
 
 .portfolio .grid {
     display: grid;
-    gap: 1em;
+    gap: 5px;
+    grid-template-columns: repeat(4,350px);
+    align-content: center;
+    justify-content: center;
 }
 
-@media (min-width: 560px) {
+@media (max-width: 500px){
+
+    .portfolio {
+        padding: 1em;
+    }
+
+    .portfolio h2 {
+        font-size: 35px;
+
+    
+    }
+
+    .portfolio .grid {
+        grid-template-columns: 100px;
+        align-content: center;
+        justify-content: center;
+        margin-right: 40%;
+    }
+
+    .img-portfolio {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/*@media (min-width: 560px) {
     .portfolio .grid {
         grid-template-columns: 250px 250px;
     }    
@@ -130,7 +162,7 @@ header {
         height: calc(100vh - 8em - 48px);
     }
 }
-
+*/
 .portfolio figure {
     text-align: center;
 }
@@ -151,16 +183,43 @@ header {
 
 }
 
+/*******************************************
+                CONTATO
+*******************************************/
+
 .contato .icons {
     text-align: center;
 }
 
+.contato h2 {
+    font-size: 50px;
+    margin-left: 25px;
+}
+
 .contato a {
     color: indianred;
-    font-size: 5em;
+    font-size: 2em;
+    text-decoration: none;
 }
 
 .contato a:hover {
     text-decoration: none;
     text-shadow: 2px 2px 2px grey;
+}
+
+@media (max-width: 500px){
+    .contato h2 {
+        font-size: 35px;
+        margin-bottom: 5px;
+        margin-left: 15px;
+    }
+    .contato a {
+        font-size: 50px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .contato a:hover {
+        text-decoration: none;
+    }
 }
