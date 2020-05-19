@@ -102,7 +102,21 @@ header {
                 PORTFOLIO
 ********************************************/
 
-/*.contato,*/
+.sobre {
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 100vh;
+    text-indent: 1.4em;
+    margin-bottom: 2em;
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    text-align: justify;
+    background-color: whitesmoke;
+    opacity: .9;
+    border-radius: 15px;
+}
+
+
 .portfolio {
     font-family: 'Ubuntu', sans-serif;
     color: indianred;
@@ -110,6 +124,7 @@ header {
     min-height: 50vh;
 }
 
+.sobre,
 .contato,
 .portfolio h2 {
     font-family: 'Roboto', sans-serif;
@@ -118,6 +133,23 @@ header {
     font-size: 50px;
 }
 
+.sobre a {
+    text-decoration: none;
+    color: slategray;
+    font-style: italic;
+}
+
+.sobre a:hover {
+    color: indianred;
+}
+
+#title-sobre {
+    font-family: 'Roboto', sans-serif;
+    color: slategray;
+    margin-bottom: 5px;
+    font-size: 50px;
+    margin-left: 25px;
+}
 .portfolio .grid {
     display: grid;
     gap: 1em;
